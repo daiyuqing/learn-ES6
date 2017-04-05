@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>解构赋值</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		{let [a,b,c]=[1,2,3];
+		console.log(a);//1
+		console.log(b);//2
+		console.log(c);//3
+			}
+		{let [x, y, ...z] = ['a'];
+		console.log(x);//'a'
+		console.log(y);//undefined
+		console.log(z);//[]
+			}
+		{let [a, [b], d] = [1, [2, 3], 4];
+		console.log(a);//1
+		console.log(b);//2
+		console.log(d);//4
+		}
+		{
+			let [foo = true] = [];//foo=true
+			let [x, y = 'b'] = ['a']; // x='a', y='b'
+			let [x, y = 'b'] = ['a', undefined]; // x='a', y='b'
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>
